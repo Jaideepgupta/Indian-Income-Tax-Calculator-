@@ -6,6 +6,34 @@ Built as part of the **Codebasics AI Pro** program (Session #2 Assignment).
 
 ---
 
+## Screenshots
+
+### Landing Page
+![Landing Page](./Main.png)
+
+### Step-by-Step Wizard with Live Preview
+
+| Step | Screenshot |
+|------|-----------|
+| **Step 1:** Salary & Age | ![Step 1](./1.png) |
+| **Step 2:** PF, Professional Tax & Bonus | ![Step 2](./2.png) |
+| **Step 3:** Rent (HRA) | ![Step 3](./3.png) |
+| **Step 4:** 80C Investments & NPS | ![Step 4](./4.png) |
+| **Step 5:** Health Insurance (80D) | ![Step 5](./5.png) |
+| **Step 6:** Home Loan | ![Step 6](./6.png) |
+| **Step 7:** Other Income | ![Step 7](./7.png) |
+
+### Final Results — Regime Comparison
+![Results Page](./Final.png)
+
+---
+
+## Demo Video
+
+📹 [Watch the full walkthrough](https://youtu.be/0dOypkaLlTI)
+
+---
+
 ## Features
 
 - **Dual-Regime Comparison** — Calculates and compares Old vs New tax regime side by side in real time.
@@ -18,9 +46,10 @@ Built as part of the **Codebasics AI Pro** program (Session #2 Assignment).
   - Section 80C, 80D (Health Insurance), NPS (80CCD)
   - Home Loan Interest (Section 24)
   - Professional Tax
-- **Interactive Slab Breakdown** — Expandable accordion showing exact step-by-step math across each tax slab (5%, 10%, 15%, etc.).
-- **Smart Tax-Saving Suggestions** — Analyzes user inputs and recommends specific actions to reduce tax liability (e.g., invest more in NPS, get health insurance).
-- **Responsive UI** — Glassmorphism design with smooth micro-interactions, works on desktop and mobile.
+- **Interactive Slab Breakdown** — Expandable accordion showing exact step-by-step math across each tax slab.
+- **Smart Tax-Saving Suggestions** — Analyzes user inputs and recommends specific actions to reduce tax liability.
+- **Built-in FAQ on Every Step** — Contextual FAQs in plain language so users understand what each input means.
+- **Responsive UI** — Dark-themed glassmorphism design with smooth micro-interactions.
 
 ---
 
@@ -30,14 +59,6 @@ Built as part of the **Codebasics AI Pro** program (Session #2 Assignment).
 - **Build Tool:** Vite
 - **Styling:** Tailwind CSS
 - **Icons:** Heroicons (SVG)
-
----
-
-## Demo
-
-> Screen recording of the working app is available in the LinkedIn post linked below.
-
-<!-- Add a screenshot here: ![App Screenshot](./screenshots/app-preview.png) -->
 
 ---
 
