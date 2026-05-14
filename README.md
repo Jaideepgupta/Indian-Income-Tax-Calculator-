@@ -120,7 +120,7 @@ Built as part of the [Codebasics AI Pro](https://codebasics.io) program. Thanks 
 ## Connect
 
 - **LinkedIn:** [Jaideep Gupta](https://www.linkedin.com/in/guptajaideep/)
-- **GitHub:** [Jaideepgupta](https://github.com/Jaideepgupta)
+- **Portfolio Website:** [Jaideep Gupta](https://codebasics.io/portfolio/Jaideep-Gupta)
 
 ---
 
