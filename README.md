@@ -1,59 +1,129 @@
 # Indian Income Tax Calculator (FY 2025-26) 🇮🇳
 
-A modern, highly accurate, and beautifully designed Indian Income Tax Calculator built with **React**, **Vite**, and **Tailwind CSS**. This application helps users quickly determine their exact tax liability under both the **Old Regime** and **New Regime** based on the latest tax rules for the Financial Year 2025-26.
+A modern, accurate, and interactive Indian Income Tax Calculator built with **React**, **Vite**, and **Tailwind CSS**. It helps users calculate their exact tax liability under both the **Old Regime** and **New Regime** and clearly shows which option saves more money.
 
-## 🚀 Features
+Built as part of the **Codebasics AI Pro** program (Session #2 Assignment).
 
-- **Dual-Regime Comparison:** Instantly calculates and compares taxes between the Old and New tax regimes side-by-side.
-- **Real-Time Live Preview:** As you input your salary and deductions, a persistent side-panel updates your final tax liability and explicitly tells you which regime saves you more money.
-- **Accurate Mathematical Engine:** 
-  - Supports Section 87A rebate limits (up to ₹7L for New, ₹5L for Old).
-  - Handles Standard Deductions correctly across both regimes.
-  - Accounts for complex deductions including HRA, 80C, 80D (Health Insurance), NPS (80CCD), Home Loan Interest (Section 24), and Professional Tax.
-- **Transparent Slab Breakdown:** Features an interactive "Tax Slabs Breakdown" accordion that shows the exact step-by-step mathematical logic across different percentage slabs.
-- **Smart Suggestions:** Analyzes the user's profile and provides actionable tips on how to save more tax (e.g., investing in NPS or Health Insurance).
-- **Responsive & Premium UI:** Designed using modern "glassmorphism" aesthetics with smooth micro-interactions, ensuring it looks incredible on both desktop and mobile.
+---
 
-## 🛠️ Tech Stack
+## Screenshots
+
+### Landing Page
+![Landing Page](./Main.png)
+
+### Step-by-Step Wizard with Live Preview
+
+| Step | Screenshot |
+|------|-----------|
+| **Step 1:** Salary & Age | ![Step 1](./1.png) |
+| **Step 2:** PF, Professional Tax & Bonus | ![Step 2](./2.png) |
+| **Step 3:** Rent (HRA) | ![Step 3](./3.png) |
+| **Step 4:** 80C Investments & NPS | ![Step 4](./4.png) |
+| **Step 5:** Health Insurance (80D) | ![Step 5](./5.png) |
+| **Step 6:** Home Loan | ![Step 6](./6.png) |
+| **Step 7:** Other Income | ![Step 7](./7.png) |
+
+### Final Results — Regime Comparison
+![Results Page](./Final.png)
+
+---
+
+## Demo Video
+
+📹 [Watch the full walkthrough](https://github.com/Jaideepgupta/Indian-Income-Tax-Calculator-/blob/main/tax%20calculator.mp4?raw=true)
+
+---
+
+## Features
+
+- **Dual-Regime Comparison** — Calculates and compares Old vs New tax regime side by side in real time.
+- **7-Step Guided Wizard** — Walks users through salary, allowances, rent, investments, health insurance, home loan, and other income without overwhelming them.
+- **Real-Time Live Preview** — A persistent side panel updates instantly as you type, showing final tax under both regimes and recommending the better one.
+- **Accurate Tax Engine (FY 2025-26)**
+  - Section 87A rebate (up to ₹7L New / ₹5L Old)
+  - Standard Deduction (₹75K New / ₹50K Old)
+  - HRA Exemption
+  - Section 80C, 80D (Health Insurance), NPS (80CCD)
+  - Home Loan Interest (Section 24)
+  - Professional Tax
+- **Interactive Slab Breakdown** — Expandable accordion showing exact step-by-step math across each tax slab.
+- **Smart Tax-Saving Suggestions** — Analyzes user inputs and recommends specific actions to reduce tax liability.
+- **Built-in FAQ on Every Step** — Contextual FAQs in plain language so users understand what each input means.
+- **Responsive UI** — Dark-themed glassmorphism design with smooth micro-interactions.
+
+---
+
+## Tech Stack
 
 - **Frontend:** React 18
-- **Styling:** Tailwind CSS (Vanilla CSS & PostCSS)
 - **Build Tool:** Vite
+- **Styling:** Tailwind CSS
 - **Icons:** Heroicons (SVG)
 
-## 💻 Running the Project Locally
+---
 
-### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+## Running Locally
 
-### Installation
+**Prerequisites:** [Node.js](https://nodejs.org/) installed on your machine.
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/taxapp.git
-   cd taxapp
-   ```
+```bash
+# Clone the repository
+git clone https://github.com/Jaideepgupta/Indian-Income-Tax-Calculator-.git
+cd Indian-Income-Tax-Calculator-
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+# Install dependencies
+npm install
 
-3. **Start the development server**
-   ```bash
-   npm run dev
-   ```
+# Start the development server
+npm run dev
+```
 
-4. **Open the application**
-   Open your browser and navigate to `http://localhost:5173`.
+Open `http://localhost:5173` in your browser.
 
-## 📁 Project Structure
+---
 
-- `/src/components/Wizard/`: Contains the 7-step data entry forms (Salary, Deductions, Rent, Investments, Insurance, Loans, Other Income).
-- `/src/components/LivePreview/`: The real-time side panel that compares regimes instantly.
-- `/src/components/Results/`: The final comprehensive breakdown and smart suggestions page.
-- `/src/engine/`: The core backend logic that performs all mathematically rigorous tax calculations based on FY 2025-26 rules.
+## Project Structure
 
-## 📝 License
+```
+src/
+├── components/
+│   ├── Wizard/          # 7-step data entry forms
+│   ├── LivePreview/     # Real-time regime comparison panel
+│   ├── Results/         # Final breakdown and smart suggestions
+│   └── shared/          # Reusable UI components
+├── engine/              # Core tax calculation logic
+├── hooks/               # Custom React hooks
+├── utils/               # Helper functions
+├── App.jsx
+└── main.jsx
+```
 
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute it.
+---
+
+## Future Improvements
+
+- Surcharge calculation for income above ₹50 Lakh
+- PDF export of tax summary
+- Capital gains support (STCG / LTCG)
+- Freelance and business income section
+- Multi-year comparison (FY 2024-25 vs 2025-26)
+- Live deployment
+
+---
+
+## Acknowledgements
+
+Built as part of the [Codebasics AI Pro](https://codebasics.io) program. Thanks to **Hemanand Vadivel**, **Naveen S**, **Aditya Goel**, **Dhaval Patel**, and the Codebasics community for the guidance and learning experience.
+
+---
+
+## Connect
+
+- **LinkedIn:** [Jaideep Gupta](https://www.linkedin.com/in/guptajaideep/)
+- **GitHub:** [Jaideepgupta](https://github.com/Jaideepgupta)
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
