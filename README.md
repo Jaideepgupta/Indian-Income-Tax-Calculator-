@@ -28,9 +28,12 @@ Built as part of the **Codebasics AI Pro** program (Session #2 Assignment).
 
 ---
 
-## Demo Video
+## Demo Video & Live Link of App
 
 📹 [Watch the full walkthrough](https://github.com/Jaideepgupta/Indian-Income-Tax-Calculator-/blob/main/tax%20calculator.mp4?raw=true)
+
+[Live Link](https://taxapp-psi.vercel.app/)
+
 
 ---
 
